@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
+    <!-- <title>Image Slideshow Animation | CodingNepal</title> -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Adare Hotel</title>
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .column {
+            float: left;
+            width: 24%;
+            padding: 0px;
+            height: 300px;
+        }
+        
+        #column {
+            margin-left: 50px;
+        }
+        
+        button {
+            width: 200px;
+            height: 40px;
+            background-color: rgb(13, 13, 58);
+            color: white;
+            border-radius: 10px;
+            outline-style: none;
+        }
+        
+        .footerspace {
+            margin-right: 40px;
+        }
+    </style>
+
+    <div id="navbar">
+        <a href="#default" id="logo">Adare Hotels</a>
+        <div id="navbar-right">
+            <a class="active" href="index.html">Home</a>
+            <a href="news.html">Our Team</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+
+    <br><br><br><br>
+
+    <section class="text-gray-700 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+            <div class="flex w-full mb-20 flex-wrap">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">Browse through image gallery of Warwick Hotels & Resorts</h1>
+                <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Take a tour through our gallery and be inspired to visit a property in the Warwick Hotels and Resorts collection. Plan your stay by browsing through images of our accommodation options, dining choices, facilities, event venues and unique
+                    surroundings.
+                </p>
+            </div>
+            <div class="flex flex-wrap md:-m-2 -m-1">
+                <div class="flex flex-wrap w-1/2">
+                    <div class="md:p-2 p-1 w-1/2">
+                        <img alt="gallery" class="w-full object-cover h-full object-center block" src="gallery2.jpg">
+                    </div>
+                    <div class="md:p-2 p-1 w-1/2">
+                        <img alt="gallery" class="w-full object-cover h-full object-center block" src="gallery3.jpg">
+                    </div>
+                    <div class="md:p-2 p-1 w-full">
+                        <img alt="gallery" class="w-full h-full object-cover object-center block" src="gallery.jpg">
+                    </div>
+                </div>
+                <div class="flex flex-wrap w-1/2">
+                    <div class="md:p-2 p-1 w-full">
+                        <img alt="gallery" class="w-full h-full object-cover object-center block" src="gallery1.jpg">
+                    </div>
+                    <div class="md:p-2 p-1 w-1/2">
+                        <img alt="gallery" class="w-full object-cover h-full object-center block" src="gallery6.jpg">
+                    </div>
+                    <div class="md:p-2 p-1 w-1/2">
+                        <img alt="gallery" class="w-full object-cover h-full object-center block" src="gallery4.jpg">
+                    </div>
+                </div>
+                <div class="flex flex-wrap w-1/2">
+                    <div class="md:p-2 p-1 w-1/2">
+                        <img alt="gallery" class="w-full object-cover h-full object-center block" src="gallery5.jpg">
+                    </div>
+                    <div class="md:p-2 p-1 w-1/2">
+                        <img alt="gallery" class="w-full object-cover h-full object-center block" src="gallery6.jpg">
+                    </div>
+                    <div class="md:p-2 p-1 w-full">
+                        <img alt="gallery" class="w-full h-full object-cover object-center block" src="gallery7.jpg">
+                    </div>
+                </div>
+                <div class="flex flex-wrap w-1/2">
+                    <div class="md:p-2 p-1 w-full">
+                        <img alt="gallery" class="w-full h-full object-cover object-center block" src="gallery8.jpg">
+                    </div>
+                    <div class="md:p-2 p-1 w-1/2">
+                        <img alt="gallery" class="w-full object-cover h-full object-center block" src="gallery9.jpg">
+                    </div>
+                    <div class="md:p-2 p-1 w-1/2">
+                        <img alt="gallery" class="w-full object-cover h-full object-center block" src="gallery10.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <br><br>
+    <div class="row">
+        <div class="column" id="column">
+            <h2>Company</h2><br>
+            <hr><br>
+            <p>About<br><br> Careers <br><br> Mobile <br><br> Blog <br><br> How we work</p>
+        </div>
+        <div class="column">
+            <h2>Contact</h2><br>
+            <hr><br>
+            <p>
+                Help/FAQ
+                <br><br> Press
+                <br><br> Affiliates
+                <br><br> Hotel owners<br><br> Partners
+            </p>
+        </div>
+        <div class="column">
+            <h2>More</h2><br>
+            <hr><br>
+            <p> Airline fees<br><br> Airlines
+                <br><br> Low fare tips<br><br> Badges & Certificate with us
+            </p>
+        </div>
+        <div class="column">
+            <h2>Site/Currency</h2><br>
+            <hr class="footerspace">
+            <br>
+            <button type="button">
+        United States
+    </button>
+            <br>
+            <br>
+            <button type="button">
+        United States Doller
+    </button>
+        </div>
+    </div>
+    <script>
+        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("navbar").style.padding = "30px 10px";
+                document.getElementById("logo").style.fontSize = "25px";
+            } else {
+                document.getElementById("navbar").style.padding = "50px 10px";
+                document.getElementById("logo").style.fontSize = "35px";
+            }
+        }
+    </script>
+</body>
+
+</html>
